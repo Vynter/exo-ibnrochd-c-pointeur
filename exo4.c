@@ -85,7 +85,7 @@ int main()
     tab=(int*)realloc(tab,(10)*sizeof(int));
 
     affichage(tab,tsize);
-
+    free(tab);
     return 0;
 }
 
