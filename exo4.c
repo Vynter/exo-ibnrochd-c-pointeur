@@ -79,10 +79,8 @@ int main()
     supp(tab,tsize,&val,&nbr);
 
     tsize=tsize-nbr;
-    printf("nbr est a %d \n",nbr);
-    printf("siez est a %d \n",tsize);
 
-    tab=(int*)realloc(tab,(10)*sizeof(int));
+    tab=(int*)realloc(tab,(tsize)*sizeof(int));
 
     affichage(tab,tsize);
     free(tab);
